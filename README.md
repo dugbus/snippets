@@ -36,3 +36,16 @@ footer {
   padding: var(--gap) max(var(--edge), calc(50% - var(--width-xl)/2);
 }
 ```
+
+### Autogrid
+
+```
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--card-width), 1fr));
+    gap: var(--gap);
+    max-width: var(--max-width);
+    padding: 0 var(--edge);
+    margin: 0 auto;
+}
+```
