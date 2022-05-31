@@ -33,7 +33,7 @@ footer {
 
 ```
 .content {
-  padding: var(--gap) max(var(--edge), calc(50% - var(--width-xl)/2);
+  padding: var(--gap) max(var(--edge), calc(50% - var(--width-xl)/2));
 }
 ```
 
