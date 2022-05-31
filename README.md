@@ -34,4 +34,5 @@ top: 100%;
 ```
 .content {
 padding: var(--gap) max(var(--edge), calc(50% - var(--width-xl)/2);
+}
 ```
