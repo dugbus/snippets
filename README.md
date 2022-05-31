@@ -16,16 +16,16 @@ Collecting bits and pieces in one place
 
 ```
 html {
-height: 100%;
+  height: 100%;
 }
 
 body {
-height: 100%;
+  height: 100%;
 }
 
 footer {
-position: sticky;
-top: 100%;
+  position: sticky;
+  top: 100%;
 }
 ```
 
@@ -33,6 +33,6 @@ top: 100%;
 
 ```
 .content {
-padding: var(--gap) max(var(--edge), calc(50% - var(--width-xl)/2);
+  padding: var(--gap) max(var(--edge), calc(50% - var(--width-xl)/2);
 }
 ```
