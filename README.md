@@ -49,3 +49,7 @@ footer {
     margin: 0 auto;
 }
 ```
+
+### Breakpoints
+
+688px - 992px - 1312px
