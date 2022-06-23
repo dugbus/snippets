@@ -30,7 +30,7 @@ Collecting bits and pieces in one place
 ```
 * {
   background: rgba(0 100 0 / 0.05);
-  outline: 1pm solid lime green !important;
+  outline: 1px solid limegreen;
 }
 ```
 
@@ -77,6 +77,7 @@ footer {
 
 688px - 992px - 1312px
 
+## JavaScript
 
 ### Console Log
 
