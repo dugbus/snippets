@@ -26,6 +26,14 @@ Collecting bits and pieces in one place
 
 ## CSS
 
+### Debug
+```
+* {
+  background: rgba(0 100 0 / 0.05);
+  outline: 1pm solid lime green !important;
+}
+```
+
 ### Sticky Footer
 
 ```
@@ -51,6 +59,7 @@ footer {
 }
 ```
 
+
 ### Autogrid
 
 ```
@@ -67,3 +76,10 @@ footer {
 ### Breakpoints
 
 688px - 992px - 1312px
+
+
+### Console Log
+
+```
+console.log("(◡‿◡)")
+```
