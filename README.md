@@ -84,3 +84,53 @@ footer {
 ```
 console.log("(◡‿◡)")
 ```
+
+const person = {name: 'Joe', age: 30. pets: ['cat','fish','dog']}
+
+//old faithful
+console.log(person)
+
+//nicely formats objects
+console.dir(person)
+
+//displays message if the assertion fails
+console.assert(person.pets.find(pet => pet === 'hamster'), 'Person does not own a hamster')
+
+//increment a counter
+person.pets.forEach(pet => console.count('Pets'))
+
+//pretty table
+console.table(person)
+
+//start a timer, log the progress, show total elapsed
+console.time() / timeLog() / timeEnd()
+
+//
+console.trace()
+
+//group messages to avoid spamming the console
+console.group()
+console.groupCollapsed()
+
+//styling
+console.log('%c I am a logging master', 'font-weight: bold; background-color: cyan; color: navy; padding: 15px')
+
+//specific styling
+console.log(
+  'CSS can make %cyour console logs%c %cawesome%c!',  // String to format
+  // Each string is the CSS to apply for each consecutive %c
+  'color: #fff; background: #1e90ff; padding: 4px',   // Apply styles
+  '',                                                 // Clear any styles
+  'color: #f00; font-weight: bold',                   // Apply styles
+  ''                                                  // Clear any styles
+);
+
+
+// {x: 1, y: 2, z: 3}
+console.log({x, y, z});
+
+//threat levels
+console.debug('Debug message');
+console.info('Useful information');
+console.warn('This is a warning');
+console.error('Something went wrong!');
