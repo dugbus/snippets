@@ -87,7 +87,6 @@ console.log("(◡‿◡)")
 
 ```
 const person = {name: 'Joe', age: 30. pets: ['cat','fish','dog']}
-```
 
 //old faithful
 console.log(person)
@@ -136,3 +135,4 @@ console.debug('Debug message');
 console.info('Useful information');
 console.warn('This is a warning');
 console.error('Something went wrong!');
+```
