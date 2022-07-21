@@ -85,7 +85,9 @@ footer {
 console.log("(◡‿◡)")
 ```
 
+```
 const person = {name: 'Joe', age: 30. pets: ['cat','fish','dog']}
+```
 
 //old faithful
 console.log(person)
