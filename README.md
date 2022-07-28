@@ -136,3 +136,40 @@ console.info('Useful information');
 console.warn('This is a warning');
 console.error('Something went wrong!');
 ```
+
+### Simple Feed
+
+```
+let jsonData = JSON.parse(jobs);
+
+const FEED_URL = `https://www.peoplebank.com/pb3/corporate/jksrestaurants/feed.php`;
+
+let jobList = [];
+
+fetch(FEED_URL)
+  .then(response => response.json())
+  .then(data => {
+
+    data.sort((a, b) => (a.title.rendered > b.title.rendered) ? 1 : -1);
+
+    console.log(data);
+
+    let content = `<div class="headings"><div class="role">Role</div><div class="location">Location</div><div class="date">Date</div></div><div class="result"><div class="title">${data[0].title.rendered}</div><div class="location"><a href="${data[0].link}">${data[0].related_venue.title}</a>`;
+
+    let currentTitle = data[0].title.rendered;
+
+    for (let i = 1; i < data.length; i++) {
+      if (data[i].title.rendered == currentTitle) {
+        content = content + `<a href="${data[i].link}">${data[i].related_venue.title}</a>`;
+      } else {
+        content = content + `</div><div class="salary">${data[i].date}</div></div><div class="result"><div class="title">${data[i].title.rendered}</div><div class="location"><a href="${data[i].link}">${data[i].related_venue.title}</a>`;
+        currentTitle = data[i].title.rendered;
+      }
+    }
+
+    content = content + `</div><div class="salary">${data[data.length-1].date}</div></div>`;
+
+    document.querySelector('#app').innerHTML = content;
+
+  });
+```
